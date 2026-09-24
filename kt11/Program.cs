@@ -4,55 +4,6 @@ using System.Text;
 
 
 namespace kt11 {
-    public interface ITrainble : IAnimal
-    {
-        string Train();
-    }
-    public class Lion : IAnimal
-    {
-        public string Name { get; private set; }
-        public Lion(string name)
-        {  Name = name; }
-        public void MakeSound()
-        {
-            Console.WriteLine("Ррррррр");
-        }
-    }
-
-    public class Dog : ITrainble
-    {
-        public string Name { get; private set; }
-        public Dog(string name)
-        {
-            Name = name;
-        }
-        public void MakeSound()
-        {
-            Console.WriteLine("Гав");
-        }
-        public string Train()
-        {
-            return $"{Name}: Бегает за костью";
-        }
-    }
-
-    public class Dolphin : ITrainble
-    {
-        public string Name { get; private set; }
-        public Dolphin(string name)
-        {
-            Name = name;
-        }
-        public void MakeSound()
-        {
-            Console.WriteLine("Свист");
-        }
-        public string Train()
-        {
-            return $"{Name}: Держит мяч";
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
